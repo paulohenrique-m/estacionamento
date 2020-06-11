@@ -60,9 +60,11 @@ void cadastrar(struct cliente dados[])
     saída:não tem 
     */
 }
+/*
 void calcular_preço(){
 
 }
+*/
 int main()
 {
     struct cliente dados[1];
