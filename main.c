@@ -17,6 +17,11 @@ void ler_carro(struct cliente dados[])
     scanf(" %s", dados[0].marca);
     printf("\nplaca:");
     scanf(" %i", &dados[0].placa);
+    /*
+    descrição:procedimento para ler marca e placa do veiculo adicionado
+    entrada:string(veiculo) e inteiro(placa)
+    saída:não tem
+    */
 }
 void guardar_arquivo(struct cliente dados[])
 {
@@ -32,6 +37,11 @@ void guardar_arquivo(struct cliente dados[])
     fprintf(fp, "placa-%i", dados[0].placa);
     fprintf(fp, "\n---------------\n");
     fclose(fp);
+    /*
+    descrição:procedimento para guardar os arquivos recebidos pela ler_carro em arquivo
+    entrada:não tem
+    saída:arquivo.txt com dados do carro(marca e placa)
+    */
 }
 void cadastrar(struct cliente dados[])
 {
@@ -44,8 +54,15 @@ void cadastrar(struct cliente dados[])
         printf("deseja guardar mais algum carro?(0-sair 1-continuar):");
         scanf("%i", &opc);
     }
+    /*
+    descrição:procedimento para usar a função ler_carro e guardar_arquivo
+    entrada:não tem
+    saída:não tem 
+    */
 }
+void calcular_preço(){
 
+}
 int main()
 {
     struct cliente dados[1];
